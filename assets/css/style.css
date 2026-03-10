@@ -1,0 +1,364 @@
+:root {
+  --azul: #2F5FBF;
+  --azul-escuro: #234A9F;
+  --amarelo: #F2C500;
+}
+
+/* Espaço para navbar fixa */
+body {
+  padding-top: 0;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: linear-gradient(
+    90deg,
+    var(--azul),
+    var(--azul-escuro)
+  );
+  transition: all 0.3s ease;
+}
+
+.navbar-brand span {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.navbar .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.navbar .nav-link::after {
+  background-color: var(--amarelo);
+}
+
+.navbar .btn-warning {
+  background-color: var(--amarelo);
+  border: none;
+  color: #000;
+}
+/* Hero */
+.hero {
+  align-items: flex-start;
+  padding-top: 80px;
+  min-height: calc(100vh - 80px);
+  position: relative;
+  overflow: hidden;
+  background: url("../img/hero.png") center/cover no-repeat;
+}
+
+/* Overlay azul */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(47,95,191,.5),
+    rgba(35,74,159,.5)
+  );
+  z-index: 1;
+}
+
+/* Conteúdo do hero */
+.hero > .container {
+  position: relative;
+  margin-top: 100px;
+  z-index: 2;
+}
+
+/* ===== HERO REFINADO ===== */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-top: 15px;
+}
+
+.hero-btn {
+  margin-top: 30px;
+  padding: 14px 36px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+
+
+/* Seções */
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  color: var(--azul);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#sobre {
+  background-color: #ffffff;
+  position: relative;
+}
+
+
+/* ===== PRODUTOS COM IMAGEM ===== */
+.product-card-img {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  height: 100%;
+  border: 1px solid #eee;
+  transition: all 0.35s ease;
+}
+
+.product-image {
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-body {
+  padding: 25px;
+  text-align: center;
+}
+
+.product-body h5 {
+  color: var(--azul);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.product-body p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* Hover */
+.product-card-img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,.12);
+}
+
+.product-card-img:hover img {
+  transform: scale(1.08);
+}
+
+/* Destaque */
+.product-card-img.featured {
+  border: 2px solid var(--azul);
+}
+
+
+
+/* ===== BOTÃO ORÇAMENTO ===== */
+.btn-orcamento {
+  background: linear-gradient(
+    90deg,
+    var(--azul),
+    var(--azul-escuro)
+  );
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 14px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+/* Hover */
+.btn-orcamento:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(238, 185, 41, 0.25);
+}
+
+/* Brilho sutil no hover */
+.btn-orcamento::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  transform: skewX(-25deg);
+}
+
+.btn-orcamento:hover::after {
+  left: 130%;
+  transition: 0.75s;
+}
+
+/* Destaque */
+.product-card.featured {
+  border: 2px solid var(--azul);
+  background: linear-gradient(
+    180deg,
+    #ffffff,
+    #f3f6ff
+  );
+}
+
+/* ===== CONTATO CONVERSÃO ===== */
+.contato-conversao {
+  padding: 100px 0;
+  background-color: #f8f9fa;
+}
+
+/* Cards */
+.card-contato {
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #f0f4ff
+  );
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 45px rgba(47, 95, 191, 0.25);
+  transition: 0.3s ease;
+}
+
+.card-contato:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(47, 95, 191, 0.35);
+}
+
+.card-contato h5 {
+  font-weight: 700;
+  color: var(--azul);
+}
+
+.contato-conversao p {
+  color: #555;
+}
+
+
+/* WhatsApp */
+.btn-whatsapp {
+  background: #25D366;
+  color: #fff;
+  border-radius: 50px;
+  padding: 14px 32px;
+  font-weight: 600;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe5d;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Inputs */
+.contato-conversao .form-control {
+  border-radius: 10px;
+  padding: 12px;
+}
+
+/* Ícones nos inputs */
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 20px;
+  pointer-events: none;
+}
+
+textarea + .input-icon {
+  top: 22px;
+  transform: none;
+}
+
+
+
+
+
+
+/* ===== FOOTER ===== */
+.footer {
+  background: linear-gradient(90deg, #2F5FBF, #234A9F);
+  padding: 50px 0 20px;
+}
+
+.footer-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--amarelo);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ffffffcc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  padding-left: 5px;
+}
+
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.301);
+  margin: 30px 0 15px;
+}
+
+/* ===== WHATSAPP FLOAT ===== */
+.whatsapp-float {
+  position: fixed;       /* ESSENCIAL */
+  bottom: 25px;
+  right: 25px;
+  background: #25D366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 15px 30px rgba(0,0,0,.25);
+  z-index: 9999;         /* Fica acima de tudo */
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background: #1ebe5d;
+  color: #fff;
+  transform: translateY(-4px);
+}
+
+.whatsapp-float i {
+  font-size: 26px;
+}
