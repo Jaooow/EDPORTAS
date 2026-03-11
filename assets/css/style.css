@@ -222,7 +222,7 @@ body {
 /* ===== CONTATO CONVERSÃO ===== */
 .contato-conversao {
   padding: 100px 0;
-  background-color: #f8f9fa;
+  background-color: #fff;
 }
 
 /* Cards */
@@ -292,10 +292,128 @@ textarea + .input-icon {
   transform: none;
 }
 
+/* Garante que os cards de contato tenham a mesma altura no desktop */
+@media (min-width: 768px) {
+  .contato-conversao .row {
+    display: flex;
+    align-items: stretch;
+  }
+}
 
+/* Ajuste fino para o card que contém o mapa */
+.card-contato .ratio {
+  border-radius: 12px;
+  overflow: hidden; /* Garante que as bordas do iframe respeitem o arredondamento */
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
 
+/* Melhora a legibilidade do título dentro do card */
+.card-contato h5 {
+  margin-top: 10px;
+  border-left: 4px solid var(--azul);
+  padding-left: 15px;
+}
 
+/* Torna os links de telefone interativos */
+.card-contato a.text-dark:hover {
+  color: var(--azul) !important;
+  transition: 0.2s;
+}
 
+/* Estilização extra para o botão de WhatsApp dentro do card */
+.btn-whatsapp {
+  border-radius: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Estilo para as etiquetas de destaque */
+.bg-success-subtle {
+  background-color: #d1e7dd;
+  font-size: 0.75rem;
+  padding: 8px 15px;
+}
+
+/* Estilo para os ícones das redes sociais no footer */
+.social-icon {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background: var(--amarelo);
+  color: var(--azul-escuro);
+  transform: translateY(-3px);
+}
+
+/* Garante que os links de contato no footer não fiquem azuis padrão */
+.footer a.text-white:hover {
+  color: var(--amarelo) !important;
+}
+
+/* Container do card com altura fixa para não desalinharem */
+.product-card-img {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.product-image {
+  position: relative;
+  height: 250px; /* Altura fixa para todas as fotos */
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+}
+
+/* Badge de categoria sobre a imagem */
+.badge-categoria {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--azul);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Estilo dos Botões de Filtro */
+.filter-btn {
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.filter-btn.active {
+  background-color: var(--azul);
+  color: white;
+  border-color: var(--azul);
+}
+
+/* Espaçamento interno do corpo do card */
+.product-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 /* ===== FOOTER ===== */
 .footer {
