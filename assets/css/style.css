@@ -252,6 +252,65 @@ body {
   color: #555;
 }
 
+.item-produto {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Estilização Premium para o Modal */
+#modalProduto .modal-content {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#modalProduto .modal-header {
+    background: linear-gradient(90deg, var(--azul), var(--azul-escuro));
+    border-bottom: none;
+    padding: 20px 30px;
+}
+
+/* Botão de Orçamento do Modal (Igual ao do Hero/Index) */
+#modalZap {
+    background-color: var(--amarelo);
+    border: none;
+    color: #000;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+#modalZap:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    background-color: #e6bc00; /* Tom de amarelo levemente mais escuro */
+}
+
+/* Ficha Técnica */
+.card-tecnico {
+    background-color: #f8faff;
+    border-left: 4px solid var(--azul);
+    border-radius: 8px;
+}
+
+/* Badge de Categoria no Modal */
+.modal-badge {
+    background: var(--azul-escuro);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Ajuste da imagem no modal para não perder qualidade */
+#modalImagem {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
 
 /* WhatsApp */
 .btn-whatsapp {
