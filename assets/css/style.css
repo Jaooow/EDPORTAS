@@ -43,7 +43,7 @@ body {
 .hero {
   align-items: flex-start;
   padding-top: 80px;
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
   background: url("../img/hero.png") center/cover no-repeat;
