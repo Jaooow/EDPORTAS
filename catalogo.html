@@ -3,21 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ED Portas | Qualidade e Segurança</title>
+    <title>ED Portas | Catálogo Completo</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-    <link rel="icon" href="assets/img/logo_navbar.png">
-
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="./assets/img/logo_navbar.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="./index.html">
           <img src="./assets/img/logo_text_branco.png" alt="ED Portas" height="80">
         </a>
 
@@ -28,13 +25,13 @@
         <div class="collapse navbar-collapse" id="menu">
           <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item">
-              <a class="nav-link active" href="#inicio">Início</a>
+              <a class="nav-link" href="./index.html">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#sobre">Sobre</a>
+              <a class="nav-link" href="./index.html#sobre">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./catalogo.html">Produtos</a>
+              <a class="nav-link active" href="catalogo.html">Produtos</a>
             </li>
             <li class="nav-item ms-lg-3">
               <a class="btn btn-warning fw-semibold px-4" href="#contato">
@@ -46,44 +43,20 @@
       </div>
     </nav>
 
-
-    <section id="inicio" class="hero d-flex align-items-center">
-      <div class="container text-center text-white">
-        <h1 class="hero-title">
-          Portas sob medida com qualidade e segurança
-        </h1>
-        <p class="hero-subtitle">
-          Há mais de 35 anos oferecendo soluções em madeira e alumínio
-        </p>
-        <a href="#contato" class="btn btn-warning btn-lg hero-btn">
-          Solicitar orçamento
-        </a>
-      </div>
-    </section>
-
-    <section id="sobre" class="section">
+    <section id="produtos" class="section bg-light py-5 mt-5">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <h2 class="section-title">Sobre a ED Portas</h2>
-            <p>
-              <b>Tradição e Excelência há mais de 35 anos.</b>
-            </p>
-            <p>Com mais de três décadas de história, a ED PORTAS é referência na comercialização de portas, batentes, vitrôs e janelas. Especialistas em soluções de madeira e alumínio, oferecemos um catálogo completo para transformar o seu projeto.</p>
-            <p>Nosso compromisso vai além da venda: priorizamos a qualidade máxima, o atendimento consultivo e uma assistência técnica dedicada à total satisfação de nossos clientes.</p>
-            <p><b>Solicite seu orçamento.</b> Estamos prontos para oferecer a melhor solução para sua obra ou reforma com agilidade e dedicação.</p>
+        <br>
+        <h2 class="section-title text-center mb-5 mt-4">Catálogo Completo de Produtos</h2>
+          <div class="row justify-content-center mb-4">
+              <div class="col-md-6">
+                  <div class="input-group">
+                      <span class="input-group-text bg-white border-end-0">
+                          <i class="bi bi-search text-primary"></i>
+                      </span>
+                      <input type="text" id="inputBusca" class="form-control border-start-0 ps-0" placeholder="Buscar por nome ou modelo...">
+                  </div>
+              </div>
           </div>
-          <div class="col-md-6 text-center">
-            <img src="./assets/img/hero.png" class="img-fluid rounded" alt="Sobre a empresa">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="produtos" class="section bg-light py-5">
-      <div class="container">
-        <h2 class="section-title text-center mb-5">Nossos Produtos</h2>
-        
         <div class="d-flex justify-content-center flex-wrap gap-2 mb-5">
           <button class="btn btn-outline-primary active filter-btn" data-filter="todos">Todos</button>
           <button class="btn btn-outline-primary filter-btn" data-filter="madeira">Madeira</button>
@@ -92,24 +65,13 @@
         </div>
 
         <div class="row g-4" id="lista-produtos">
-        </div>
-        
-        <div id="controles-paginacao" class="d-flex justify-content-center mt-4"></div>
-
-        <div class="text-center mt-5 d-flex flex-column flex-md-row justify-content-center gap-3">
-          <a href="./catalogo.html" class="btn btn-outline-primary btn-lg px-5">
-              <i class="bi bi-grid-3x3-gap me-2"></i>Ver Catálogo Completo
-          </a>
-          <a href="#contato" class="btn btn-orcamento btn-lg px-5">
-              Peça seu orçamento agora
-          </a>
-        </div>
+          </div>
+          <div id="controles-paginacao" class="d-flex justify-content-center mt-4"></div>
       </div>
     </section>
 
     <section id="contato" class="contato-conversao">
       <div class="container">
-
         <div class="text-center mb-5">
           <h2 class="section-title text-black">Solicite seu orçamento</h2>
           <p class="text-black-50">
@@ -118,11 +80,9 @@
         </div>
 
         <div class="row g-4 align-items-stretch">
-
           <div class="col-md-5">
             <div class="card-contato h-100">
               <h5 class="mb-4 text-center">Canais de Atendimento</h5>
-
               <div class="mb-4">
                 <p class="fw-bold mb-2 text-primary small text-uppercase">Telefones Fixos</p>
                 <div class="d-flex align-items-center gap-3 mb-2">
@@ -134,23 +94,13 @@
                   <a href="tel:1127481579" class="text-decoration-none text-dark">(11) 2748-1579</a>
                 </div>
               </div>
-
               <hr class="my-4 opacity-25">
-
               <div class="text-center">
                 <p class="fw-bold mb-2 text-success small text-uppercase">WhatsApp Comercial</p>
-                <p class="small text-muted mb-3">
-                  Atendimento imediato para dúvidas e orçamentos técnicos.
-                </p>
-
-                <a 
-                  href="https://wa.me/5511947835560?text=Olá! Gostaria de um orçamento" 
-                  target="_blank"
-                  class="btn btn-whatsapp w-100 py-3 shadow-sm d-flex align-items-center justify-content-center gap-2">
-                  <i class="bi bi-whatsapp fs-4"></i>
-                  Solicitar Orçamento
+                <p class="small text-muted mb-3">Atendimento imediato para dúvidas e orçamentos técnicos.</p>
+                <a href="https://wa.me/5511947835560?text=Olá! Gostaria de um orçamento" target="_blank" class="btn btn-whatsapp w-100 py-3 shadow-sm d-flex align-items-center justify-content-center gap-2">
+                  <i class="bi bi-whatsapp fs-4"></i> Solicitar Orçamento
                 </a>
-
                 <div class="mt-3 d-flex align-items-center justify-content-center gap-2">
                   <span class="badge rounded-pill bg-success-subtle text-success border border-success-subtle">
                     <i class="bi bi-clock-history"></i> Resposta rápida
@@ -168,33 +118,26 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
-
     <footer class="footer text-white">
       <div class="container">
         <div class="row gy-4">
-
           <div class="col-md-4">
             <img src="./assets/img/logo_text_branco.png" height="80" class="mb-3">
-            <p class="small">
-              Soluções em portas com qualidade, segurança e design.
-            </p>
+            <p class="small">Soluções em portas com qualidade, segurança e design.</p>
           </div>
-
           <div class="col-md-4">
             <h6 class="footer-title">Navegação</h6>
             <ul class="footer-links list-unstyled">
-              <li><a href="#inicio" class="text-white text-decoration-none">Início</a></li>
-              <li><a href="#sobre" class="text-white text-decoration-none">Sobre</a></li>
-              <li><a href="#produtos" class="text-white text-decoration-none">Produtos</a></li>
+              <li><a href="../index.html" class="text-white text-decoration-none">Início</a></li>
+              <li><a href="../index.html#sobre" class="text-white text-decoration-none">Sobre</a></li>
+              <li><a href="catalogo.html" class="text-white text-decoration-none">Produtos</a></li>
               <li><a href="#contato" class="text-white text-decoration-none">Contato</a></li>
             </ul>
           </div>
-
           <div class="col-md-4">
             <h6 class="footer-title">Contato</h6>
             <p class="small mb-2 d-flex align-items-center gap-2">
@@ -221,12 +164,9 @@
               </a>
             </div>
           </div>
-
         </div>
         <hr class="footer-divider">
-        <div class="text-center small">
-          © 2026 ED Portas. Todos os direitos reservados.
-        </div>
+        <div class="text-center small">© 2026 ED Portas. Todos os direitos reservados.</div>
       </div>
     </footer>
 
@@ -240,36 +180,25 @@
           <div class="modal-body p-4">
             <div class="row g-4">
               <div class="col-md-6">
-                <img src="" id="modalImagem" class="img-fluid rounded shadow-sm" alt="Produto" style="height: 350px; object-fit: cover; width: 100%;">
+                <img src="" id="modalImagem" class="img-fluid rounded shadow-sm" style="height: 350px; object-fit: cover; width: 100%;">
               </div>
               <div class="col-md-6">
                 <span id="modalTituloBadge" class="modal-badge mb-2 d-inline-block">CATEGORIA</span>
                 <h2 id="modalNome" class="fw-bold mb-3" style="color: var(--azul-escuro);"></h2>
                 <p id="modalDescricao" class="text-muted"></p>
-                
                 <div class="card-tecnico p-3 mb-4" style="background: #f8faff; border-left: 4px solid var(--azul);">
-                  <h6 class="fw-bold text-primary"><i class="bi bi-gear-fill me-2"></i>Especificações Técnicas</h6>
+                  <h6 class="fw-bold text-primary small">ESPECIFICAÇÕES TÉCNICAS</h6>
                   <div class="row small">
-                    <div class="col-6 mb-2">
-                      <span class="text-muted d-block">Peso Estimado</span>
-                      <strong id="infoPeso"></strong> <strong>kg</strong>
-                    </div>
-                    <div class="col-6 mb-2">
-                      <span class="text-muted d-block">Dimensões (CxLxA)</span>
-                      <strong id="infoDimensoes"></strong> <strong>cm</strong>
-                    </div>
+                    <div class="col-6 mb-2">Peso: <strong id="infoPeso"></strong> kg</div>
+                    <div class="col-6 mb-2">Dimensões: <strong id="infoDimensoes"></strong> cm</div>
                   </div>
                 </div>
-
-                <div class="mt-2">
-                  <label class="form-label small fw-bold text-muted text-uppercase">Consultar Frete</label>
-                  <div class="input-group">
-                    <span class="input-group-text bg-white border-end-0"><i class="bi bi-geo-alt text-primary"></i></span>
-                    <input type="text" class="form-control border-start-0 ps-0" placeholder="Digite seu CEP" id="cepFrete">
-                    <button class="btn btn-primary" type="button" onclick="consultarCep()">Calcular</button>
-                  </div>
-                  <div id="resultadoFrete"></div>
+                <div class="input-group">
+                  <span class="input-group-text bg-white border-end-0"><i class="bi bi-geo-alt text-primary"></i></span>
+                  <input type="text" class="form-control border-start-0 ps-0" placeholder="Digite seu CEP" id="cepFrete">
+                  <button class="btn btn-primary" type="button" onclick="consultarCep()">Calcular</button>
                 </div>
+                <div id="resultadoFrete"></div>
               </div>
             </div>
           </div>
@@ -282,15 +211,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/script/dados-produtos.js"></script>
-    <script src="assets/script/script.js"></script>
+    <script src="./assets/script/script.js"></script>
+    <script src="./assets/script/script-catalogo.js"></script>
 
-    <a 
-      href="https://wa.me/5511947835560?text=Olá! Gostaria de um orçamento."
-      target="_blank"
-      class="whatsapp-float"
-      aria-label="Falar no WhatsApp">
-      <i class="bi bi-whatsapp"></i>
-    </a>
-
+    <a href="https://wa.me/5511947835560" target="_blank" class="whatsapp-float"><i class="bi bi-whatsapp"></i></a>
   </body>
 </html>
